@@ -1,10 +1,10 @@
 {
-  "name": "Double Take Proxy",
+  "name": "NginX Proxy",
   "version": "1.0.0",
-  "url": "https://github.com/jakowenko/double-take",
+  "url": "https://github.com/jrsmile/jrsmile-hassio-addons",
   "panel_icon": "mdi:face-recognition",
-  "slug": "double-take-proxy",
-  "description": "Unified UI and API for processing and training images for facial recognition",
+  "slug": "nginx-proxy",
+  "description": "HA integrated Reverse Proxy",
   "arch": ["aarch64", "amd64", "armhf", "armv7", "i386"],
   "startup": "application",
   "boot": "auto",
@@ -12,7 +12,7 @@
   "ingress_port": 3000,
   "panel_admin": false,
   "options": {
-    "server": "double-take.local:3000"
+    "server": "nginx-proxy.local:3000"
   },
   "schema": {
     "server": "match(^.+:\\d+$)"
